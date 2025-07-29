@@ -20,7 +20,9 @@ aside img {
 
 p {
     padding: 0;
-}   
+    font-family: "merriweather", serif;
+    font-size: 1rem;
+}
 
 main img {
     padding: 1rem;
