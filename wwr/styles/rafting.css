@@ -45,8 +45,7 @@ article {
 body {  
     display: flex;
     flex-direction: column;
-    justify-items: auto;
-    align-items: center; /* centers content horizontally */
+    align-items: center; 
     font-family: Merriweather, serif;
     font-weight: 400;
     background-color: var(--accent1-color);
