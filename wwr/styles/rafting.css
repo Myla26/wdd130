@@ -14,87 +14,214 @@
 
 
 header {
-    display: grid;
-    grid-template-columns:1fr 120fr 120fr ; 
-    align-items: center;
-    margin: 1rem auto;
-    background-color: var(--primary-color);
-    color: black;
-    font-weight: 900;
-    border-bottom: 1px solid #ccc;
-    max-width: 1000px;
-} 
+  background:var(--accent1-color);
+  color:#a855f7;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
 
-.navigation {
+
+nav {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+
+
+
+/* body {
+  font-family: Merriweather;
+  background-color:#a0cfa7;
+  color:#cae1b7;
+  line-height: 1.6;
+}
+
+
+
+
+
+.nav a:hover {
+  background-color: white;
+  color: #7c3aed;
+}
+
+/* ===== Section Base Style ===== */
+.section {
+  background-color: white;
+  margin-top: 2rem;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.section h1,
+.section h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+}
+
+/* ===== Section Borders ===== */
+.rafting {
+  border-top: 4px solid #6366f1;
+}
+
+.history {
+  background-color: #f3f4f6;
+  border-left: 4px solid #a855f7;
+}
+
+.adventure {
+  border-bottom: 4px solid #6366f1;
+}
+
+/* ===== Content Sections ===== */
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.content p {
+  text-align: justify;
+  color: #4b5563;
+  font-size: 1rem;
+  flex: 1;
+}
+
+@media (min-width: 768px) {
+  .rafting .content,
+  .history .content {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+/* ===== Icon Section (History) ===== */
+.icon {
+  background-color: #6366f1;
+  border-radius: 9999px;
+  padding: 1.5rem;
+  flex-shrink: 0;
+}
+
+.icon img {
+  width: 100px;
+  height: 100px;
+}
+
+/* ===== Adventure Gallery ===== */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+  text-align: center;
+}
+
+.gallery .item {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery .item img {
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery .item:hover img {
+  transform: scale(1.05);
+}
+
+.gallery p {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: #6b7280;
+  transition: color 0.3s;
+}
+
+
+footer {
+  background-color: #1f2937;
+  color: white;
+  padding: 1.5rem 2rem;
+  border-radius: 1.5rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.875rem;
+}
+
+social a {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  color: #1f2937;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-left: 0.5rem;
+}
+
+
+
+
+
+/* header {
+    display: grid;
+    grid-template-columns:1fr  120px 120fr;
+	margin: 1rem auto;
+	border-bottom: 1px solid #ccc; 
+	max-width: 1000px; 
+    font-weight: 900;
+
+} 
+nav{
 	display: flex;
 	flex-wrap: wrap;
-	list-style: none;
-	padding: 0;
 	font-family: Arial, sans-serif;
 }
 
-article {
-	margin: 1em auto;
-	border: 1px solid rgb(0 0 0 / 10%);
-	padding: 1em;
-	width: min(600px, 100%);
-	font-size: 1.2rem;
-}
-
-
-body {  
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    font-family: Merriweather, serif;
-    font-weight: 400;
-    background-color: var(--accent1-color);
-}
-
 h1 {
-    display:grid;
-    justify-content:center;
-    background-color: var(--primary-color);
-    color: black;
+  font-size: 2rem;
+}
+section {
+	width: 75vw;
+	margin: 1rem auto;
+	background-color: #eee;
+	padding: 1rem;
+	border: 1px solid rgb(0 0 0 / .1);
 }
 
-p,
-section,
-article {  
-    display: flex;
-    justify-content:flex-start;
-    background-color: var(--secondary-color);
-    color: black;
-}   
+p {
+	text-align: justify;
+} */
 
-article img{
-    display:flex;
-    float:right;
+/* .col1 img {
+	float: right;
+	margin: 0 0 15px 15px;
+	border: 1px solid rgba(0 0 0 / .3);
+	box-shadow: 0 0 30px #777;
 }
 
-nav,img {
-    display: flex;
-    float:right;
-    gap: 40px;
+footer {
+	border-top: 1px solid #555;
+	padding-top: 5px;
 }
-
-img {
-    max-width: 200px;
-    max-height: 150px;
-}
-
-
- figcaption {  
-    background-color:black;
-    color:aqua;
-    padding: 10px;
-    text-align: center;
- } 
-
-
-
-
-
-
-
-
+ */
