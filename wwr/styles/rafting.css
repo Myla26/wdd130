@@ -12,6 +12,13 @@
     --body-font: 'Oswald', sans-serif;
     }
 
+  nav a {
+    /* width: 100px; */
+    font-size: 1.25rem;
+    padding: 1rem;
+    border: 1px solid black; 
+  } 
+
   header {
     background-color: #cae1b7;
     padding: 2rem;
@@ -31,12 +38,16 @@ body {
   margin: 1rem;
 }
 
-div{
+main{
+  background-color: #a0cfa7;
+}
+
+/* div{
   margin: 1rem;
   border: 1px solid black;
   padding: 1rem;
   background-color:#cae1b7;
-}
+} */
 h1,h2{
   text-align: center;
 }
@@ -45,11 +56,11 @@ h1,h2{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} 
 
 
 p{  
-  background-color:azure;
+  background-color:#a0cfa7;
   gap: 1.5rem;
   text-align: center;
   border: 2px solid black;
@@ -61,14 +72,11 @@ section img{
   justify-content: flex-end;
 }
 
-  nav a {
-    font-size: 1.25rem;
-    padding: 1rem;
-    border: 1px solid black;
-  }
   section nav{
     display: flex;
     justify-content: right;
+    font-size: 1.25rem;
+    padding: 1rem;
+    border: 1px solid black; 
   }
-
 
